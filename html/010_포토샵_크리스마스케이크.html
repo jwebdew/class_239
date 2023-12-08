@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포토샵 크리스마스케이크</title>
+    <style>
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* 기본폰트 설정 */
+            font-family: 'GmarketSansMedium';
+        }
+
+        .cake {
+            /* 
+            가로
+            세로
+            배경컬러
+             */
+            width: 1080px;
+            height: 1080px;
+            background-color: #093929;
+            
+            /* 내부여백 */
+            padding: 42px 42px 52px;
+            /* padding: 42px 42px 52px 42px; */
+            box-sizing: border-box;
+            /* padding을 포함해서 가로,세로값 설정 */
+            margin: 50px auto;            
+        }
+
+        /* nth-child(1)
+        == first-child */
+        .cake div p:nth-child(1) {
+            /* 폰트크기
+            텍스트컬러 */
+            font-size: 51px;
+            color: #f6ebd5;
+            text-align: center;
+            margin-top: 49px;
+            line-height: 70px;
+        }
+        .cake div p:last-child {
+            font-size: 20px;
+            color: #a7bcb5;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cake">
+        <figure>
+            <img src="img/포토샵_크리스마스케이크.jpg" alt="크리스마스케이크" /> 
+        </figure>
+        
+        <div>
+            <p>
+                <strong>크리스마스 홀케이크</strong> 사전 예약하고<br />
+                <strong>무료 음료권3장</strong>을 받아보세요!       
+            </p>
+
+            <p>* 매장 혹은 앱에서 홀케이크 결제 및 예약 완료 시 케이크 품목 변경 및 환불은 불가합니다.</p>
+        </div>
+    </div><!-- .cake end -->
+</body>
+</html>

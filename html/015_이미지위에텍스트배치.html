@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지위에 텍스트 배치</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 500px;
+            background-color: rgb(255, 142, 127);
+        
+            position: relative;
+            /* position:absolute위치이동하기 위한 기준 
+            기준은 무조건 상위선택자(부모, 조상가능), 형제관계에서 불가능*/
+        }
+        .box figure {
+            width: 100%;
+            height: 500px;
+        }
+        .box figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .box span {
+            width: 100px;
+            height: 100px;
+            /* span 인라인태그이지만
+            position:absolute를 적용할 경우
+            가로값, 세로값 적용가능 */
+
+            position: absolute;
+            /* position:absolute를 사용할 경우에는
+            top, bottom중에 하나
+            left, right중에 하나 필수사용*/
+
+            left: 0px;
+            top: 0px;
+
+            font-size: 30px;
+            background-color: red;
+            color: white;
+        }
+        .box p {
+            width: 300px;
+            background-color: antiquewhite;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /*transform 변형 translate 이동
+            p너비의 반만큼 왼쪽으로 이동
+            p높이의 반만큼 위로 이동 */
+            text-align: center;
+        }
+    </style>    
+</head>
+<body>
+    <div class="box">
+        <figure>
+            <img src="img/img01.jpg" alt="겨울 따뜻한 차" />
+        </figure>
+        <span>1</span>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias maiores aliquid facilis fugit vero laboriosam porro quia ducimus quibusdam dolorem, minus voluptas est nobis dicta? Sapiente quisquam quas deleniti tempora.</p>
+    </div><!-- .box end -->
+
+</body>
+</html>

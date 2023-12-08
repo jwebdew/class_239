@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포토샵 부산관광명소 일부</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrap {
+            width: 860px;
+            background-color: antiquewhite;
+            margin: 0 auto;
+            
+            box-sizing: border-box;
+        }
+        .busan {
+            background: url('img/img01.jpg');
+            padding: 0 50px;
+        }
+        .busan .item01 {
+            width: 370px;
+            background-color: white;
+            padding: 15px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .busan .item01 figure {
+            width: 100%;
+            height: 350px;
+        }
+        .busan .item01 figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .busan .item01 div span {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: aquamarine;
+        }
+
+        .busan .item02 {
+            background-color: white;
+            border: 1px solid black;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .busan .item02 figure {
+            width: 300px;
+            height: 300px;
+        }
+        .busan .item02 figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .busan .item02 div {
+            width: 400px;
+            background-color: aquamarine;
+            /* margin-left: 100px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="busan">
+            <div class="item01">
+                <figure>
+                    <img src="img/배경1.jpg" alt="배경이미지" />
+                </figure>
+                <div>
+                    <span>BEST</span>
+                    <h1>해운대블루라인파크</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde ut quo distinctio cum quasi, animi architecto? Doloremque numquam nulla, quisquam quod id quas vel, magni blanditiis voluptates, rerum nesciunt minus.</p>
+                </div>
+            </div><!-- .item01 end -->
+
+            <div class="item02">
+                <figure>
+                    <img src="img/img01.jpg" alt="배경이미지" />
+                </figure>
+                <div>
+                    <h1>부산역출발코스</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quisquam distinctio, in veniam corporis suscipit doloremque maiores. Hic accusantium enim dolor! Id fugiat cupiditate harum assumenda minima quos itaque doloremque?</p>
+                    <strong>36,000원</strong>
+                </div>
+            </div><!-- .item02 end -->
+
+        </div><!-- .busan end -->
+    </div><!-- .wrap end -->
+</body>
+</html>

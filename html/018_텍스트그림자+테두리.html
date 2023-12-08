@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 그림자 테두리</title>
+    <style>
+        @font-face {
+            font-family: 'SBAggroB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .text {
+            font-family: 'SBAggroB';
+            font-size: 50px;
+            margin: 50px;
+        }
+        /* class="text text1" */
+        .text.text1 {
+            -webkit-text-stroke: 2px red;
+            /* 텍스트테두리 : 두께 컬러 */
+        }
+        .text2 {
+            text-shadow: 5px 10px 5px red;
+            /* 텍스트그림자 : x축 y축 블러 컬러 */
+        }
+        .text.text3 {
+            color: palegoldenrod;
+        }
+        p.text3 {
+            color: royalblue;
+            text-shadow: -2px 0 red, 0 2px red, 2px 0 red, 0 -2px red;
+            /* 텍스트그림자를 이용하여
+            텍스트테두리 제작하는 방법 */            
+        }
+        /* 태그 + 클래스함께 사용보다는 
+        클래스+클래스사용이 우선순위 높음. */
+    </style>
+</head>
+
+<body>
+    <p class="text text1">텍스트 테두리 그림자1</p>
+    <p class="text text2">텍스트 테두리 그림자2</p>
+    <p class="text text3">텍스트 테두리</p>    
+</body>
+
+</html>

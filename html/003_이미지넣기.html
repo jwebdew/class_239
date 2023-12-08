@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지넣기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img { 
+            width: 500px; /* 가로 */
+            height: 500px; /* 세로 */
+            object-fit: cover;
+            /* 이미지를 가로, 세로 사이즈 맞춰 비율조절 */
+        }
+
+        figure {
+            text-align: center;
+            /* 이미지를 가운데 정렬 시켜주기 위해 작성 */
+        }
+
+        /* figure태그 안에 있는 img태그에게
+        width값을 100px로 적용 */
+        figure img {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <img src="img/img01.jpg" alt="눈덮인 산에 따뜻한 음료와 과일" />
+
+    <figure>
+        <img src="img/img01.jpg" alt="눈덮인 산에 따뜻한 음료와 과일" />
+    </figure>
+</body>
+</html>

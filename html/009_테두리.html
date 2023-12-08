@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테두리</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .border {
+            background-color: #e0e0e0;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .border ul li {
+            width: 150px;
+            height: 50px;
+            display: inline-block;
+
+            border: 10px solid white;
+            /* 테두리: 두께 스타일 컬러 */
+            /* solid => 실선 */
+
+            margin: 10px;
+            line-height: 50px;
+
+        }
+         
+        .border ul li:nth-child(2) {
+            border: 10px dotted white;
+            /* 스타일
+            solid, dotted, dashed, double, 
+            groove, ridge, inset, outset
+            */
+        }
+        .border  ul li:nth-child(3) {
+            border: 10px dashed #fff;
+        }
+        .border  ul li:nth-child(4) {
+            border: 10px double #fff;
+        }
+        .border  ul li:nth-child(5) {
+            border: 10px groove #fff;
+        }
+        .border  ul li:nth-child(6) {
+            border: 10px ridge #fff;
+        }
+        .border  ul li:nth-child(7) {
+            border: 10px inset #fff;
+        }
+        .border  ul li:nth-child(8) {
+            border: 10px outset #fff;
+        }
+        /* .border ul li:nth-child(9)
+        == .border ul li:last-child */
+        .border ul li:nth-child(9) {
+            border-right: 10px dashed red;
+            /* border-right
+            border-left
+            border-top
+            border-bottom */
+            /* width, style, color */
+            border-bottom-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="border">
+        <h1>박스 테두리</h1>
+        <ul>
+            <li>테두리 1</li>
+            <li>테두리 2</li>
+            <li>테두리 3</li>
+            <li>테두리 4</li>
+            <li>테두리 5</li>
+            <li>테두리 6</li>
+            <li>테두리 7</li>
+            <li>테두리 8</li>
+            <li>테두리 9</li>
+        </ul>
+    </div><!-- .border end -->
+</body>
+</html>

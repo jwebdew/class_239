@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콘텐츠 링크 마크업 진행</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+            /* 밑줄 없애기 */
+
+            color: inherit;
+            /* inherit => 부모값 상속받기 */
+        }
+        .info {
+            width: 860px;
+            background-color: royalblue;
+            /* 가운데 배치 
+            내부여백 : 상하좌우 70px*/
+            /* 내부여백 포함해서 가로값 잡히도록 설정 */
+            margin: 50px auto;
+            padding: 70px;
+            box-sizing: border-box;
+        }
+        .info div {
+            background-color: white;
+            margin: 30px 0;  
+            text-align: center; 
+
+            padding: 40px;
+            border: 1px solid black;
+            border-radius: 10px;
+            /* 
+            내부여백 : 상하좌우 40px
+            테두리 : 1px 실선 컬러
+            모서리곡선 : 모든방향 10px */         
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info">
+        <div>
+            <a href="#">
+                <strong>카테고리</strong>
+                <h1>콘텐츠제목</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam deserunt ea quidem atque aliquid
+                    voluptatibus unde quae, cumque, vero dolorum soluta nihil sed aperiam quos tempora quia fugiat
+                    pariatur non.</p>
+            </a>
+        </div>
+
+        <div>
+            <a href="#">
+                <strong>카테고리2</strong>
+                <h1>콘텐츠제목2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab culpa aut dolor quis, ad assumenda! Cum,
+                    quisquam possimus totam omnis corporis dolorum nobis rerum fugit enim explicabo officiis assumenda
+                    voluptate.</p>
+            </a>
+        </div>
+
+    </div><!-- .info end -->
+
+     
+</body>
+
+</html>

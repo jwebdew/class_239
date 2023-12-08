@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지포함 컨텐츠 만들기</title>
+    <style>
+        @font-face {
+            font-family: 'YClover-Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/YClover-Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        div {
+            width: 500px;
+            /* background-color: beige; */
+            text-align: center;
+            margin: 50px auto; 
+        }
+        div img {
+            width: 100%;
+        }
+        div h1 {
+            font-family: 'YClover-Bold';
+        }
+        div p {
+            /* 여백 : 위로10px 아래로30px */
+            margin: 10px 0 30px;
+            font-family: 'GmarketSansMedium';
+
+        }
+        div a {
+            /* width: 300px; */
+            display: block;
+            margin: 0 auto; 
+
+            text-decoration: none;
+            /* 밑줄 없애기 */
+
+            background-color: rgb(0, 99, 99);
+            /* 배경컬러 */
+
+            color: white;
+            /* 글자컬러 */
+
+            padding: 10px 0;
+            /* 내부여백 : 위아래10px 좌우0px */
+            font-family: 'GmarketSansMedium';
+            
+        }
+        .item a {
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <img src="img/스타벅스_바닐라크림콜드브루.jpg" alt="스타벅스 바닐라크림콜드브루 이미지" />
+        <h1>🥃바닐라 크림 콜드 브루</h1>        
+        <p>콜드 브루에 더해진 바닐라 크림으로 깔끔하면서 달콤한 콜드 브루를 새롭게 즐길 수 있는 음료입니다.</p>
+        <a href="#">나만의 음료로 등록</a>
+    </div>
+
+    <hr />
+
+    <div class="item">
+        <img src="img/레드애플피지오.jpg" alt="레드애플피지오 이미지" />
+        <h1>🍷레드 애플 피지오</h1>        
+        <p>달콤상큼한 사과맛으로 가볍게 즐길 수 있는 애플 피지오</p>
+        <a href="#">나만의 음료로 등록</a>
+    </div>
+</body>
+</html>
